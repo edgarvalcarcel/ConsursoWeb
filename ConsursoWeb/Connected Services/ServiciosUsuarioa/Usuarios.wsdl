@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Usuarios" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" />
+      <xsd:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUsuarios_Autenticar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Autenticar" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_Autenticar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ResetearClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetearClave" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ResetearClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetearClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_CambiarClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarClave" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_CambiarClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_CerrarSesion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesion" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_CerrarSesion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarUsuarioHabeasData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioHabeasData" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarUsuarioHabeasData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioHabeasDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarHabeasDataUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarHabeasDataUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarHabeasDataUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarHabeasDataUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_BuscaUsuarioAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscaUsuarioAD" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_BuscaUsuarioAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscaUsuarioADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_NotificaGZ_InputMessage">
+    <wsdl:part name="parameters" element="tns:NotificaGZ" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_NotificaGZ_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NotificaGZResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_NotificaCambioZonaGZ_InputMessage">
+    <wsdl:part name="parameters" element="tns:NotificaCambioZonaGZ" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_NotificaCambioZonaGZ_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NotificaCambioZonaGZResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertaUsuarioAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertaUsuarioAD" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertaUsuarioAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertaUsuarioADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ApruebaUsuarioAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApruebaUsuarioAD" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ApruebaUsuarioAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApruebaUsuarioADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_RechazaUsuarioAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:RechazaUsuarioAD" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_RechazaUsuarioAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RechazaUsuarioADResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarCrecimientoAsesora_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarCrecimientoAsesora" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarCrecimientoAsesora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarCrecimientoAsesoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarCrecimientoAsesora_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCrecimientoAsesora" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarCrecimientoAsesora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCrecimientoAsesoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarPendientesAprobacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPendientesAprobacion" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarPendientesAprobacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarPendientesAprobacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ObtenerSeguimientoPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSeguimientoPedido" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ObtenerSeguimientoPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSeguimientoPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_AprobarRechazarCupoAsesora_InputMessage">
+    <wsdl:part name="parameters" element="tns:AprobarRechazarCupoAsesora" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_AprobarRechazarCupoAsesora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AprobarRechazarCupoAsesoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ActualizarEstadoBloqueoAsesora_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoBloqueoAsesora" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ActualizarEstadoBloqueoAsesora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoBloqueoAsesoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ValidarBloqueoActualizacionDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarBloqueoActualizacionDatos" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ValidarBloqueoActualizacionDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarBloqueoActualizacionDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarAsesoraPorCedula_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarAsesoraPorCedula" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarAsesoraPorCedula_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarAsesoraPorCedulaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarSolicitudActualizacionDatosHistoricoUbicacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarSolicitudActualizacionDatosHistoricoUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_InsertarSolicitudActualizacionDatosHistoricoUbicacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarSolicitudActualizacionDatosHistoricoUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarFechasLimiteCampanaAsesora_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFechasLimiteCampanaAsesora" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsultarFechasLimiteCampanaAsesora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFechasLimiteCampanaAsesoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsutarUsuarioMercadeo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsutarUsuarioMercadeo" />
+  </wsdl:message>
+  <wsdl:message name="IUsuarios_ConsutarUsuarioMercadeo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsutarUsuarioMercadeoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUsuarios">
+    <wsdl:operation name="Autenticar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/Autenticar" message="tns:IUsuarios_Autenticar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/AutenticarResponse" message="tns:IUsuarios_Autenticar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetearClave">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ResetearClave" message="tns:IUsuarios_ResetearClave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ResetearClaveResponse" message="tns:IUsuarios_ResetearClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarClave">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/CambiarClave" message="tns:IUsuarios_CambiarClave_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/CambiarClaveResponse" message="tns:IUsuarios_CambiarClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CerrarSesion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/CerrarSesion" message="tns:IUsuarios_CerrarSesion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/CerrarSesionResponse" message="tns:IUsuarios_CerrarSesion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioHabeasData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsultarUsuarioHabeasData" message="tns:IUsuarios_ConsultarUsuarioHabeasData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsultarUsuarioHabeasDataResponse" message="tns:IUsuarios_ConsultarUsuarioHabeasData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarHabeasDataUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/InsertarHabeasDataUsuario" message="tns:IUsuarios_InsertarHabeasDataUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/InsertarHabeasDataUsuarioResponse" message="tns:IUsuarios_InsertarHabeasDataUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscaUsuarioAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/BuscaUsuarioAD" message="tns:IUsuarios_BuscaUsuarioAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/BuscaUsuarioADResponse" message="tns:IUsuarios_BuscaUsuarioAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NotificaGZ">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/NotificaGZ" message="tns:IUsuarios_NotificaGZ_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/NotificaGZResponse" message="tns:IUsuarios_NotificaGZ_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NotificaCambioZonaGZ">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/NotificaCambioZonaGZ" message="tns:IUsuarios_NotificaCambioZonaGZ_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/NotificaCambioZonaGZResponse" message="tns:IUsuarios_NotificaCambioZonaGZ_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertaUsuarioAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/InsertaUsuarioAD" message="tns:IUsuarios_InsertaUsuarioAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/InsertaUsuarioADResponse" message="tns:IUsuarios_InsertaUsuarioAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApruebaUsuarioAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ApruebaUsuarioAD" message="tns:IUsuarios_ApruebaUsuarioAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ApruebaUsuarioADResponse" message="tns:IUsuarios_ApruebaUsuarioAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RechazaUsuarioAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/RechazaUsuarioAD" message="tns:IUsuarios_RechazaUsuarioAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/RechazaUsuarioADResponse" message="tns:IUsuarios_RechazaUsuarioAD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCrecimientoAsesora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/InsertarCrecimientoAsesora" message="tns:IUsuarios_InsertarCrecimientoAsesora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/InsertarCrecimientoAsesoraResponse" message="tns:IUsuarios_InsertarCrecimientoAsesora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCrecimientoAsesora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsultarCrecimientoAsesora" message="tns:IUsuarios_ConsultarCrecimientoAsesora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsultarCrecimientoAsesoraResponse" message="tns:IUsuarios_ConsultarCrecimientoAsesora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarPendientesAprobacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsultarPendientesAprobacion" message="tns:IUsuarios_ConsultarPendientesAprobacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsultarPendientesAprobacionResponse" message="tns:IUsuarios_ConsultarPendientesAprobacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSeguimientoPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ObtenerSeguimientoPedido" message="tns:IUsuarios_ObtenerSeguimientoPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ObtenerSeguimientoPedidoResponse" message="tns:IUsuarios_ObtenerSeguimientoPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AprobarRechazarCupoAsesora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/AprobarRechazarCupoAsesora" message="tns:IUsuarios_AprobarRechazarCupoAsesora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/AprobarRechazarCupoAsesoraResponse" message="tns:IUsuarios_AprobarRechazarCupoAsesora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstadoBloqueoAsesora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ActualizarEstadoBloqueoAsesora" message="tns:IUsuarios_ActualizarEstadoBloqueoAsesora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ActualizarEstadoBloqueoAsesoraResponse" message="tns:IUsuarios_ActualizarEstadoBloqueoAsesora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarBloqueoActualizacionDatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ValidarBloqueoActualizacionDatos" message="tns:IUsuarios_ValidarBloqueoActualizacionDatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ValidarBloqueoActualizacionDatosResponse" message="tns:IUsuarios_ValidarBloqueoActualizacionDatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarAsesoraPorCedula">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsultarAsesoraPorCedula" message="tns:IUsuarios_ConsultarAsesoraPorCedula_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsultarAsesoraPorCedulaResponse" message="tns:IUsuarios_ConsultarAsesoraPorCedula_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarSolicitudActualizacionDatosHistoricoUbicacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/InsertarSolicitudActualizacionDatosHistoricoUbicacion" message="tns:IUsuarios_InsertarSolicitudActualizacionDatosHistoricoUbicacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/InsertarSolicitudActualizacionDatosHistoricoUbicacionResponse" message="tns:IUsuarios_InsertarSolicitudActualizacionDatosHistoricoUbicacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFechasLimiteCampanaAsesora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsultarFechasLimiteCampanaAsesora" message="tns:IUsuarios_ConsultarFechasLimiteCampanaAsesora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsultarFechasLimiteCampanaAsesoraResponse" message="tns:IUsuarios_ConsultarFechasLimiteCampanaAsesora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsutarUsuarioMercadeo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUsuarios/ConsutarUsuarioMercadeo" message="tns:IUsuarios_ConsutarUsuarioMercadeo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUsuarios/ConsutarUsuarioMercadeoResponse" message="tns:IUsuarios_ConsutarUsuarioMercadeo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="Usuarios" />
+</wsdl:definitions>

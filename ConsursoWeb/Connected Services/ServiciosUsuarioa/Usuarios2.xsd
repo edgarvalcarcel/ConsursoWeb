@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="LoginUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Clave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginUsuario" nillable="true" type="tns:LoginUsuario" />
+  <xs:complexType name="UsuarioHabeasData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CampanaActual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CampanaHabeasData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisponibleIngresoHabeasData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FechaCaducidadHabeasData" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrigenModificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="blnHabeasData" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioHabeasData" nillable="true" type="tns:UsuarioHabeasData" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AceptoContratoSuministro" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ActivarBloqueoAsesoras" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ActualizaDatosAseesora" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Barrio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BloqueoActualizacionDatos" type="xs:boolean" />
+      <xs:element minOccurs="0" name="BloqueoAsesoraRegion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CantidadMaximaPedido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Clasificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodEstadoNuevo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoCampana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComboMagicoObligatorio" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ContratoSuministros" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CorreoGerente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DigitaPedido" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DigitosMascara" type="xs:int" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoGZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EsAdminBanner" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EsAdminOfertaDia" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EsAdminOutletVirtual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EsAdministrador" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EsOperaciones" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EsTrasportista" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EstadoPedidoActual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoPedidoAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinCampana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinCampanaPagoAnticipado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinNoRecuperacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinalRealCampaña" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaIniCampana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaRealFinCampana" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ImagenAgotadosCA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImagenAvisoCodeudor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImagenAvisoPromocional" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCampana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGerenteArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGerenteZona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificacionHome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroCampana" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroPedidosCampanasAnteriores" type="xs:int" />
+      <xs:element minOccurs="0" name="OtorgaRegaloComboMagico" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PagoAnticipado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PlanReconquista" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PorcentajeNivelServicio" type="xs:double" />
+      <xs:element minOccurs="0" name="PuedeHacerPedido" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SaldoAdeudado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SaldoAdeudatoVal" type="xs:double" />
+      <xs:element minOccurs="0" name="TelefonoFijo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoMovil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TieneCodeudor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TieneEncuestaPendiente" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TienePremioCampanaActual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TopeCodeudor" type="xs:double" />
+      <xs:element minOccurs="0" name="TopeMinimoPedido" type="xs:double" />
+      <xs:element minOccurs="0" name="UrlImagenPremioAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorFlete" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorMaximoSaldo" type="xs:double" />
+      <xs:element minOccurs="0" name="ValorPedidoPermitido" type="xs:double" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZonaEncargada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZonaPagoAnticipado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ZonasAsignadasTransportista" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ZonasTrasnportista" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="existeCamapanaMicrositioJuegos" type="xs:boolean" />
+      <xs:element minOccurs="0" name="existeZonaPagoAnticipado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="hostname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="ArrayOfInforme">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Informe" nillable="true" type="tns:Informe" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInforme" nillable="true" type="tns:ArrayOfInforme" />
+  <xs:complexType name="Informe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkExterno" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Informe" nillable="true" type="tns:Informe" />
+  <xs:complexType name="ResetearClave">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResetearClave" nillable="true" type="tns:ResetearClave" />
+  <xs:complexType name="CambiarClave">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaveAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClaveNueva" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CambiarClave" nillable="true" type="tns:CambiarClave" />
+  <xs:complexType name="UsuarioAD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Barrio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BarrioId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CambioBarrio" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioCelular" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioCelularSegundo" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioCiudad" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioDepartamento" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioDireccion" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioEmail" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioInternet" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioNvlEducativo" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioOcupacion" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioTelFamiliar" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioTelFijo" type="xs:int" />
+      <xs:element minOccurs="0" name="CambioZona" type="xs:int" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CiudadId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiasTranscurridos" type="xs:int" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionCorta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaModificacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaNacimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="IdRegistroSolicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="NivelEducativo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombrePostulador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ObservacionesGZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ocupacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrdenPrioridad" type="xs:short" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Saldo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoCelular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoCelularSegundo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoFamiliar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoFijo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TieneInternet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoPostulador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioAprueba" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioAD" nillable="true" type="tns:UsuarioAD" />
+  <xs:complexType name="NotificacionGZ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotificacionGZ" nillable="true" type="tns:NotificacionGZ" />
+  <xs:complexType name="CrecimientoAsesoraInsertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aprobacion" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CantidadPedidosAnteriores" type="xs:int" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Equipo" type="xs:int" />
+      <xs:element minOccurs="0" name="EstadoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreLider" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PromedioUltimasCampanas" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TieneCodeudor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TipoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorTopeAsesoraSinCodeudor" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorTotalRealPedido" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CrecimientoAsesoraInsertar" nillable="true" type="tns:CrecimientoAsesoraInsertar" />
+  <xs:complexType name="CrecimientoAsesora">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Equipo" type="xs:int" />
+      <xs:element minOccurs="0" name="EstadoAprobacion" type="xs:int" />
+      <xs:element minOccurs="0" name="EstadoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaUltimaActualizacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaUltimaAprobacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GerenteArea" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GerenteZona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreEstadoAprobacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreEstadoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreLider" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PorcentajeIncremento" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PromedioUltimasCampanas" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Semaforo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TieneCodeudor" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TipoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorPedido" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorSolicitado" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorTopeAsesoraSinCodeudor" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorTotalRealPedido" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CrecimientoAsesora" nillable="true" type="tns:CrecimientoAsesora" />
+  <xs:complexType name="ArrayOfCrecimientoAsesora">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CrecimientoAsesora" nillable="true" type="tns:CrecimientoAsesora" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCrecimientoAsesora" nillable="true" type="tns:ArrayOfCrecimientoAsesora" />
+  <xs:complexType name="ArrayOfUsuarioAD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuarioAD" nillable="true" type="tns:UsuarioAD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuarioAD" nillable="true" type="tns:ArrayOfUsuarioAD" />
+  <xs:complexType name="seguimientoPedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinalRealCampaña" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diasDeEntraga" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="existeSeguimientoPedido" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fechaDeEntraga" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaDefactura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tienePedidoFechaSeguimiento" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="seguimientoPedido" nillable="true" type="tns:seguimientoPedido" />
+  <xs:complexType name="BloqueoActualizacionDatos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bloqueo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CantidadSolicitudes" type="xs:int" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BloqueoActualizacionDatos" nillable="true" type="tns:BloqueoActualizacionDatos" />
+  <xs:complexType name="SolicitudActualizacionDatosHistoricoUbicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AreaAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Barrio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BarrioAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CiudadAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartamentoAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionAnterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSolicitudActualizacionDatos" type="xs:int" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZonaAnterior" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SolicitudActualizacionDatosHistoricoUbicacion" nillable="true" type="tns:SolicitudActualizacionDatosHistoricoUbicacion" />
+  <xs:complexType name="VigenciaCampana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CampanaUltimoPedido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComboMagicoObligatorio" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinInfo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaFinNoRecuperacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaFinPagoAnticipado" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaFinReal" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaIni" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaUltimoPedido" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MailGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreAsesora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PorcentajeNivelServicio" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PorcentajeNivelServicioCambios" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VigenciaCampana" nillable="true" type="tns:VigenciaCampana" />
+  <xs:complexType name="UsuarioLoginConcursoMercadeo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cedula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionRol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinalMailgroup" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Mailgroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreAsesor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoCelular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioLoginConcursoMercadeo" nillable="true" type="tns:UsuarioLoginConcursoMercadeo" />
+</xs:schema>

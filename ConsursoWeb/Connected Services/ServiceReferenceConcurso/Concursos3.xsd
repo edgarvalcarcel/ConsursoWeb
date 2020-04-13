@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfConcurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Concurso" nillable="true" type="tns:Concurso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConcurso" nillable="true" type="tns:ArrayOfConcurso" />
+  <xs:complexType name="Concurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionPremio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="ImageAplicacion" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ImageAvatar" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ImageMovil" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ImageWeb" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroCampañas" type="xs:int" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Concurso" nillable="true" type="tns:Concurso" />
+  <xs:complexType name="ArrayOfRanking">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ranking" nillable="true" type="tns:Ranking" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRanking" nillable="true" type="tns:ArrayOfRanking" />
+  <xs:complexType name="Ranking">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AproboCampana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescripcionCampaña" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCampaña" type="xs:long" />
+      <xs:element minOccurs="0" name="IdUsuario" type="xs:long" />
+      <xs:element minOccurs="0" name="IdentificacionUsuario" type="xs:long" />
+      <xs:element minOccurs="0" name="Meta" type="xs:long" />
+      <xs:element minOccurs="0" name="PorcentajeActual" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PorcentajeCrecimiento" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Posicion" type="xs:long" />
+      <xs:element minOccurs="0" name="Salvavidas" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorActual" type="xs:long" />
+      <xs:element minOccurs="0" name="ValorAnterior" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Ranking" nillable="true" type="tns:Ranking" />
+  <xs:complexType name="ArrayOfCampana">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Campana" nillable="true" type="tns:Campana" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampana" nillable="true" type="tns:ArrayOfCampana" />
+  <xs:complexType name="Campana">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="IdConcurso" type="xs:long" />
+      <xs:element minOccurs="0" name="Inicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PorcentajeCrecimiento" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Campana" nillable="true" type="tns:Campana" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dispositivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCierre" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Identificacion" type="xs:long" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Perfil" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+</xs:schema>

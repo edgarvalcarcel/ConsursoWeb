@@ -1,0 +1,561 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{924C9558-E4E0-4F3E-949F-73D66C316E31}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsursoWeb</RootNamespace>
+    <AssemblyName>ConsursoWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.17.1.0.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceConcurso\Concursos1.wsdl" />
+    <None Include="Connected Services\ServiceReferenceConcurso\Concursos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceConcurso\Concursos31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceConcurso\Concursos32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceConcurso\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceConcurso\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceConcurso\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\AdminCampana.aspx" />
+    <Content Include="Admin\AdminCargaImgMovil.aspx" />
+    <Content Include="Admin\AdminCargaImgWeb.aspx" />
+    <Content Include="Admin\AdminCargarImgAvatar.aspx" />
+    <Content Include="Admin\AdminCierre.aspx" />
+    <Content Include="Admin\AdminConcurso.aspx" />
+    <Content Include="Admin\AdminDescargarRanking.aspx" />
+    <Content Include="Admin\AdminUsuario.aspx" />
+    <Content Include="Admin\CargarImagen2.aspx" />
+    <Content Include="Admin\CargarImgAplicacion.aspx" />
+    <None Include="Connected Services\ServiceReferenceConcurso\Concursos1.disco" />
+    <Content Include="Bienvenidos.aspx" />
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.BloqueoActualizacionDatos2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.CrecimientoAsesora2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.HabeasData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.NotificacionGZ2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.PendientesAprobacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.seguimientoPedido2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.Usuario2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.UsuarioAD2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.UsuarioConcursoMercadeo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosUsuarioa\ConsursoWeb.ServiciosUsuarioa.VigenciaCampana1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios.disco" />
+    <None Include="Connected Services\ServiciosUsuarioa\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiciosUsuarioa\configuration.svcinfo" />
+    <None Include="Connected Services\ServiciosUsuarioa\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="ControlesUsuario\MenuAdmin.ascx" />
+    <Content Include="ControlesUsuario\Menu.ascx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\queen_of_camelot-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="ImagenMP.png" />
+    <Content Include="imagenPrueba.png" />
+    <Content Include="Image\18.png" />
+    <Content Include="Image\2.png" />
+    <Content Include="Image\20-BG.png" />
+    <Content Include="Image\22.png" />
+    <Content Include="Image\4.png" />
+    <Content Include="Image\5.png" />
+    <Content Include="Image\banner.png" />
+    <Content Include="Image\Btn_Salvavidas.png" />
+    <Content Include="Image\check_in.png" />
+    <Content Include="Image\check_out.png" />
+    <Content Include="Image\close.png" />
+    <Content Include="Image\clsssn.png" />
+    <Content Include="Image\cntacc.png" />
+    <Content Include="Image\cont.png" />
+    <Content Include="Image\cuadriculaCrecimiento.png" />
+    <Content Include="Image\cuadriculaTop5.png" />
+    <Content Include="Image\Fondo_gris_.png" />
+    <Content Include="Image\footer-bienvenidos.png" />
+    <Content Include="Image\footer-login.png" />
+    <Content Include="Image\footer-mensaje.png" />
+    <Content Include="Image\footer-web-text.png" />
+    <Content Include="Image\footer-web.png" />
+    <Content Include="Image\heart.png" />
+    <Content Include="Image\icono_MP.png" />
+    <Content Include="Image\icono_TCDL.png" />
+    <Content Include="Image\id.png" />
+    <Content Include="Image\Id_icon.png" />
+    <Content Include="Image\imgPremio.png" />
+    <Content Include="Image\img_tyc.png" />
+    <Content Include="Image\INFORMACION-APP-MP.png" />
+    <Content Include="Image\Informacion.png" />
+    <Content Include="Image\lifesafe.png" />
+    <Content Include="Image\login_dos_intentos.png" />
+    <Content Include="Image\login_No_facturacion_Campana_base.png" />
+    <Content Include="Image\Logo_.png" />
+    <Content Include="Image\mail.png" />
+    <Content Include="Image\mail_icon.png" />
+    <Content Include="Image\map.png" />
+    <Content Include="Image\mobile.png" />
+    <Content Include="Image\MOVIL-HOME.png" />
+    <Content Include="Image\mpcloud-map-text.png" />
+    <Content Include="Image\mpcloud-map.png" />
+    <Content Include="Image\mpcloud.png" />
+    <Content Include="Image\name.png" />
+    <Content Include="Image\No_cumple_meta_inicial.png" />
+    <Content Include="Image\phone_icon.png" />
+    <Content Include="Image\pop-up-2.png" />
+    <Content Include="Image\pop-up-contactenos.png" />
+    <Content Include="Image\PopUps_Datos_Erroneos_mas_3_intentos.png" />
+    <Content Include="Image\PopUp_Aceptar_TyC.png" />
+    <Content Include="Image\TerminosNo.png" />
+    <Content Include="Image\TerminosSi.png" />
+    <Content Include="Image\User_icon.png" />
+    <Content Include="Image\usuario_descalificado.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Mensaje.aspx" />
+    <Content Include="Mensaje1.aspx" />
+    <Content Include="Mensaje2.aspx" />
+    <Content Include="Mensaje3.aspx" />
+    <Content Include="Mensaje5.aspx" />
+    <Content Include="Mensaje6.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Paginas\Informacion.aspx" />
+    <Content Include="Paginas\PagContacto.aspx" />
+    <Content Include="Paginas\PerfilRanking.aspx" />
+    <Content Include="Paginas\Premio.aspx" />
+    <Content Include="Paginas\TopCinco.aspx" />
+    <Content Include="pppp.aspx" />
+    <Content Include="PruebaUsuario.aspx" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Properties\DataSources\Entidades.Concurso.datasource" />
+    <Content Include="Properties\DataSources\Entidades.Campaña1.datasource" />
+    <Content Include="Properties\DataSources\Entidades.Ranking1.datasource" />
+    <Content Include="Properties\DataSources\Entidades.Usuario1.datasource" />
+    <Content Include="Properties\DataSources\Entidades.Campana.datasource" />
+    <Fakes Include="Fakes\AjaxControlToolkit.fakes" />
+    <Content Include="Properties\DataSources\AccesoDatos.ServicioMercadeo.RealityCrucero2.datasource" />
+    <Content Include="Properties\DataSources\AccesoDatos.ServicioMercadeo.RealityCrucero21.datasource" />
+    <Content Include="fonts\Queen of Camelot Italic.otf" />
+    <Content Include="fonts\Queen of Camelot Outlines.otf" />
+    <Content Include="fonts\Queen of Camelot.otf" />
+    <Content Include="fonts\queen_of_camelot-webfont.eot" />
+    <Content Include="fonts\queen_of_camelot-webfont.ttf" />
+    <Content Include="fonts\queen_of_camelot-webfont.woff" />
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios.wsdl" />
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosUsuarioa\Usuarios7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Queen of Camelot Italic.otf" />
+    <Content Include="Queen of Camelot Outlines.otf" />
+    <Content Include="Queen of Camelot.otf" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminCampana.aspx.cs">
+      <DependentUpon>AdminCampana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCampana.aspx.designer.cs">
+      <DependentUpon>AdminCampana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCargaImgMovil.aspx.cs">
+      <DependentUpon>AdminCargaImgMovil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCargaImgMovil.aspx.designer.cs">
+      <DependentUpon>AdminCargaImgMovil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCargaImgWeb.aspx.cs">
+      <DependentUpon>AdminCargaImgWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCargaImgWeb.aspx.designer.cs">
+      <DependentUpon>AdminCargaImgWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCargarImgAvatar.aspx.cs">
+      <DependentUpon>AdminCargarImgAvatar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCargarImgAvatar.aspx.designer.cs">
+      <DependentUpon>AdminCargarImgAvatar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCierre.aspx.cs">
+      <DependentUpon>AdminCierre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCierre.aspx.designer.cs">
+      <DependentUpon>AdminCierre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminConcurso.aspx.cs">
+      <DependentUpon>AdminConcurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminConcurso.aspx.designer.cs">
+      <DependentUpon>AdminConcurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDescargarRanking.aspx.cs">
+      <DependentUpon>AdminDescargarRanking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDescargarRanking.aspx.designer.cs">
+      <DependentUpon>AdminDescargarRanking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUsuario.aspx.cs">
+      <DependentUpon>AdminUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsuario.aspx.designer.cs">
+      <DependentUpon>AdminUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CargarImagen2.aspx.cs">
+      <DependentUpon>CargarImagen2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CargarImagen2.aspx.designer.cs">
+      <DependentUpon>CargarImagen2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CargarImgAplicacion.aspx.cs">
+      <DependentUpon>CargarImgAplicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CargarImgAplicacion.aspx.designer.cs">
+      <DependentUpon>CargarImgAplicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bienvenidos.aspx.cs">
+      <DependentUpon>Bienvenidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bienvenidos.aspx.designer.cs">
+      <DependentUpon>Bienvenidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReferenceConcurso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiciosUsuarioa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesUsuario\MenuAdmin.ascx.cs">
+      <DependentUpon>MenuAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesUsuario\MenuAdmin.ascx.designer.cs">
+      <DependentUpon>MenuAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesUsuario\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesUsuario\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.aspx.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje.aspx.designer.cs">
+      <DependentUpon>Mensaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje1.aspx.cs">
+      <DependentUpon>Mensaje1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje1.aspx.designer.cs">
+      <DependentUpon>Mensaje1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje2.aspx.cs">
+      <DependentUpon>Mensaje2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje2.aspx.designer.cs">
+      <DependentUpon>Mensaje2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje3.aspx.cs">
+      <DependentUpon>Mensaje3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje3.aspx.designer.cs">
+      <DependentUpon>Mensaje3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje5.aspx.cs">
+      <DependentUpon>Mensaje5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje5.aspx.designer.cs">
+      <DependentUpon>Mensaje5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje6.aspx.cs">
+      <DependentUpon>Mensaje6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mensaje6.aspx.designer.cs">
+      <DependentUpon>Mensaje6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Informacion.aspx.cs">
+      <DependentUpon>Informacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Informacion.aspx.designer.cs">
+      <DependentUpon>Informacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PagContacto.aspx.cs">
+      <DependentUpon>PagContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PagContacto.aspx.designer.cs">
+      <DependentUpon>PagContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PerfilRanking.aspx.cs">
+      <DependentUpon>PerfilRanking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PerfilRanking.aspx.designer.cs">
+      <DependentUpon>PerfilRanking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Premio.aspx.cs">
+      <DependentUpon>Premio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Premio.aspx.designer.cs">
+      <DependentUpon>Premio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\TopCinco.aspx.cs">
+      <DependentUpon>TopCinco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\TopCinco.aspx.designer.cs">
+      <DependentUpon>TopCinco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pppp.aspx.cs">
+      <DependentUpon>pppp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pppp.aspx.designer.cs">
+      <DependentUpon>pppp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebaUsuario.aspx.cs">
+      <DependentUpon>PruebaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PruebaUsuario.aspx.designer.cs">
+      <DependentUpon>PruebaUsuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{62fdb26a-1e3f-4f5b-8a6a-60e7a202ca91}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{84cdedff-fd6d-49ba-86a1-82e8513ccc70}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceConcurso\" />
+    <WCFMetadataStorage Include="Connected Services\ServiciosUsuarioa\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49452</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49452/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

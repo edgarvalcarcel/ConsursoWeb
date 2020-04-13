@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Concursos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entidades" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConcursos_ConsultaConcurso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaConcurso" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_ConsultaConcurso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaConcursoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_Top5Ranking_InputMessage">
+    <wsdl:part name="parameters" element="tns:Top5Ranking" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_Top5Ranking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Top5RankingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_ConsultarCampanas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCampanas" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_ConsultarCampanas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCampanasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_ConsultaLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaLogin" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_ConsultaLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultaLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarDispositivo_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDispositivo" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarDispositivo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarDispositivoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarRanking_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarRanking" />
+  </wsdl:message>
+  <wsdl:message name="IConcursos_RegistrarRanking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarRankingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConcursos">
+    <wsdl:operation name="ConsultaConcurso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/ConsultaConcurso" message="tns:IConcursos_ConsultaConcurso_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/ConsultaConcursoResponse" message="tns:IConcursos_ConsultaConcurso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Top5Ranking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/Top5Ranking" message="tns:IConcursos_Top5Ranking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/Top5RankingResponse" message="tns:IConcursos_Top5Ranking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCampanas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/ConsultarCampanas" message="tns:IConcursos_ConsultarCampanas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/ConsultarCampanasResponse" message="tns:IConcursos_ConsultarCampanas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/ConsultaLogin" message="tns:IConcursos_ConsultaLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/ConsultaLoginResponse" message="tns:IConcursos_ConsultaLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarDispositivo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/RegistrarDispositivo" message="tns:IConcursos_RegistrarDispositivo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/RegistrarDispositivoResponse" message="tns:IConcursos_RegistrarDispositivo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/RegistrarUsuario" message="tns:IConcursos_RegistrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/RegistrarUsuarioResponse" message="tns:IConcursos_RegistrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarRanking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConcursos/RegistrarRanking" message="tns:IConcursos_RegistrarRanking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConcursos/RegistrarRankingResponse" message="tns:IConcursos_RegistrarRanking_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConcursos" type="tns:IConcursos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultaConcurso">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/ConsultaConcurso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Top5Ranking">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/Top5Ranking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCampanas">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/ConsultarCampanas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaLogin">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/ConsultaLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarDispositivo">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/RegistrarDispositivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/RegistrarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarRanking">
+      <soap:operation soapAction="http://tempuri.org/IConcursos/RegistrarRanking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Concursos">
+    <wsdl:port name="BasicHttpBinding_IConcursos" binding="tns:BasicHttpBinding_IConcursos">
+      <soap:address location="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc/basic" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

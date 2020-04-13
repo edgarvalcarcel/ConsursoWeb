@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" />
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" />
+  <xs:complexType name="LoginUsuario">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q1:Request">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q2:LoginUsuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LoginUsuario" nillable="true" type="tns:LoginUsuario" />
+  <xs:complexType name="ResetearClave">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q3:Request">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q4:ResetearClave" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetearClave" nillable="true" type="tns:ResetearClave" />
+  <xs:complexType name="CambiarClave">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q5:Request">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q6:CambiarClave" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CambiarClave" nillable="true" type="tns:CambiarClave" />
+  <xs:complexType name="UsuarioHabeasData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q7:Request">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q8:UsuarioHabeasData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioHabeasData" nillable="true" type="tns:UsuarioHabeasData" />
+  <xs:complexType name="UsuarioAD">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q9:Request">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q10:UsuarioAD" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsuarioAD" nillable="true" type="tns:UsuarioAD" />
+  <xs:complexType name="NotificacionGZ">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q11:Request">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q12:NotificacionGZ" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NotificacionGZ" nillable="true" type="tns:NotificacionGZ" />
+  <xs:complexType name="InsertarActualizacionDatos">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q13:Request">
+        <xs:sequence>
+          <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q14:UsuarioAD" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizacionDatos" nillable="true" type="tns:InsertarActualizacionDatos" />
+  <xs:complexType name="CrecimientoAsesoraInsertar">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q15:Request">
+        <xs:sequence>
+          <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q16:CrecimientoAsesoraInsertar" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CrecimientoAsesoraInsertar" nillable="true" type="tns:CrecimientoAsesoraInsertar" />
+  <xs:complexType name="CrecimientoAsesora">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q17:Request">
+        <xs:sequence>
+          <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q18:CrecimientoAsesora" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CrecimientoAsesora" nillable="true" type="tns:CrecimientoAsesora" />
+  <xs:complexType name="seguimientoPedido">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q19:Request">
+        <xs:sequence>
+          <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="SeguimientoPedido" nillable="true" type="q20:seguimientoPedido" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="seguimientoPedido" nillable="true" type="tns:seguimientoPedido" />
+  <xs:complexType name="Usuario">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q21:Request">
+        <xs:sequence>
+          <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q22:Usuario" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="BloqueoActualizacionDatos">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q23:Request">
+        <xs:sequence>
+          <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q24:BloqueoActualizacionDatos" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BloqueoActualizacionDatos" nillable="true" type="tns:BloqueoActualizacionDatos" />
+  <xs:complexType name="SolicitudActualizacionDatosHistoricoUbicacion">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q25:Request">
+        <xs:sequence>
+          <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q26:SolicitudActualizacionDatosHistoricoUbicacion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SolicitudActualizacionDatosHistoricoUbicacion" nillable="true" type="tns:SolicitudActualizacionDatosHistoricoUbicacion" />
+  <xs:complexType name="VigenciasCampana">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" base="q27:Request">
+        <xs:sequence>
+          <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Entidades" minOccurs="0" name="Request" nillable="true" type="q28:VigenciaCampana" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VigenciasCampana" nillable="true" type="tns:VigenciasCampana" />
+</xs:schema>

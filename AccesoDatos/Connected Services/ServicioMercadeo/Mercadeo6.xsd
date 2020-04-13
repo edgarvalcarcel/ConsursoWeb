@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RealityCruceroConsulta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cedula" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RealityCruceroConsulta" nillable="true" type="tns:RealityCruceroConsulta" />
+  <xs:complexType name="ArrayOfRealityCrucero">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RealityCrucero" nillable="true" type="tns:RealityCrucero" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRealityCrucero" nillable="true" type="tns:ArrayOfRealityCrucero" />
+  <xs:complexType name="RealityCrucero">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cedula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailgroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValorDevolucionCampana10" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorDevolucionCampana8" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorDevolucionCampana9" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorPedidoCampana10" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorPedidoCampana8" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValorPedidoCampana9" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RealityCrucero" nillable="true" type="tns:RealityCrucero" />
+  <xs:complexType name="PuntajeAsesora">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campana" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Devoluciones" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Grupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PuntosInsentivos" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Zona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PuntajeAsesora" nillable="true" type="tns:PuntajeAsesora" />
+  <xs:complexType name="ArrayOfPuntajeAsesora">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PuntajeAsesora" nillable="true" type="tns:PuntajeAsesora" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPuntajeAsesora" nillable="true" type="tns:ArrayOfPuntajeAsesora" />
+</xs:schema>

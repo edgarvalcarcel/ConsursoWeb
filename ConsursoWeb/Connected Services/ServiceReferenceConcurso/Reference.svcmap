@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3aa21ac4-19e5-4aa1-9413-1772a979749f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Concursos3.xsd" MetadataType="Schema" ID="6c7b86d4-6ab0-4461-89eb-7f8126e095d9" SourceId="1" SourceUrl="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd2" />
+    <MetadataFile FileName="Concursos31.xsd" MetadataType="Schema" ID="8dbb9c6a-cec0-42ab-abff-e362048eb363" SourceId="1" SourceUrl="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd1" />
+    <MetadataFile FileName="Concursos1.wsdl" MetadataType="Wsdl" ID="9c2b91dc-901f-45db-bfec-323dca59bc0a" SourceId="1" SourceUrl="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?wsdl" />
+    <MetadataFile FileName="Concursos32.xsd" MetadataType="Schema" ID="649c92bf-2a4d-4458-9c8d-e8ba66ee57dc" SourceId="1" SourceUrl="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?xsd=xsd0" />
+    <MetadataFile FileName="Concursos1.disco" MetadataType="Disco" ID="220995fb-e6c3-4e02-aa31-46bb69184b2b" SourceId="1" SourceUrl="http://wcfservicioconcurso.azurewebsites.net/Concursos.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

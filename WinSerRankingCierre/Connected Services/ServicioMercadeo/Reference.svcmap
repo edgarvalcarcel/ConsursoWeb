@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bff5c645-9fa6-4e29-9d9a-f04c07b99290" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Mercadeo.xsd" MetadataType="Schema" ID="ea4dcd92-8372-4f3b-8a7c-282f35c8224e" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd1" />
+    <MetadataFile FileName="Mercadeo1.xsd" MetadataType="Schema" ID="d4b41685-ae62-4d2a-89fd-ee1bb93c5a2d" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd0" />
+    <MetadataFile FileName="Mercadeo2.xsd" MetadataType="Schema" ID="0ace059f-5972-4bc9-8017-d7bf4c18d983" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd3" />
+    <MetadataFile FileName="Mercadeo.wsdl" MetadataType="Wsdl" ID="ede5155e-2f7a-4f56-81b2-2724e7e330aa" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?wsdl" />
+    <MetadataFile FileName="Mercadeo3.xsd" MetadataType="Schema" ID="29f357da-12b7-47b7-80b4-0139419fb8e2" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd2" />
+    <MetadataFile FileName="Mercadeo4.xsd" MetadataType="Schema" ID="a406c467-e875-4101-b625-4f2851dd0a36" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd4" />
+    <MetadataFile FileName="Mercadeo5.xsd" MetadataType="Schema" ID="5dc885c9-4e65-44be-a43c-55e9f9f3e9f0" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd6" />
+    <MetadataFile FileName="Mercadeo6.xsd" MetadataType="Schema" ID="b24b4ab1-36bd-40de-b8f2-df676a1aa6ed" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?xsd=xsd5" />
+    <MetadataFile FileName="Mercadeo.disco" MetadataType="Disco" ID="2e1bedeb-4ac3-4e7c-8f9d-4072f041c23c" SourceId="1" SourceUrl="http://mptucasadelujo.marketingpersonal.com:28287/Servicios/Mercadeo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

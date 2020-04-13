@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" />
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" />
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" />
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8090/Servicios/Usuarios.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" />
+  <xs:element name="Autenticar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q1:LoginUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="AutenticarResult" nillable="true" type="q2:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetearClave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q3:ResetearClave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetearClaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="ResetearClaveResult" nillable="true" type="q4:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarClave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q5:CambiarClave" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarClaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="CambiarClaveResult" nillable="true" type="q6:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarSesion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Base" minOccurs="0" name="request" nillable="true" type="q7:Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarSesionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="CerrarSesionResult" nillable="true" type="q8:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUsuarioHabeasData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q9:UsuarioHabeasData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarUsuarioHabeasDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsultarUsuarioHabeasDataResult" nillable="true" type="q10:HabeasData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarHabeasDataUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q11:UsuarioHabeasData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarHabeasDataUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="InsertarHabeasDataUsuarioResult" nillable="true" type="q12:HabeasData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscaUsuarioAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q13:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscaUsuarioADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="BuscaUsuarioADResult" nillable="true" type="q14:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotificaGZ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q15:NotificacionGZ" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotificaGZResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="NotificaGZResult" nillable="true" type="q16:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotificaCambioZonaGZ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q17:NotificacionGZ" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NotificaCambioZonaGZResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="NotificaCambioZonaGZResult" nillable="true" type="q18:NotificacionGZ" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertaUsuarioAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q19:InsertarActualizacionDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertaUsuarioADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="InsertaUsuarioADResult" nillable="true" type="q20:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApruebaUsuarioAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q21:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApruebaUsuarioADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="ApruebaUsuarioADResult" nillable="true" type="q22:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RechazaUsuarioAD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q23:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RechazaUsuarioADResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="RechazaUsuarioADResult" nillable="true" type="q24:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarCrecimientoAsesora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q25:CrecimientoAsesoraInsertar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarCrecimientoAsesoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="InsertarCrecimientoAsesoraResult" nillable="true" type="q26:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCrecimientoAsesora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q27:CrecimientoAsesora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarCrecimientoAsesoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsultarCrecimientoAsesoraResult" nillable="true" type="q28:CrecimientoAsesora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPendientesAprobacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q29:UsuarioAD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarPendientesAprobacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsultarPendientesAprobacionResult" nillable="true" type="q30:PendientesAprobacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSeguimientoPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q31:seguimientoPedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerSeguimientoPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ObtenerSeguimientoPedidoResult" nillable="true" type="q32:seguimientoPedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprobarRechazarCupoAsesora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q33:CrecimientoAsesoraInsertar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AprobarRechazarCupoAsesoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="AprobarRechazarCupoAsesoraResult" nillable="true" type="q34:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstadoBloqueoAsesora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q35:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstadoBloqueoAsesoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="ActualizarEstadoBloqueoAsesoraResult" nillable="true" type="q36:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarBloqueoActualizacionDatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q37:BloqueoActualizacionDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidarBloqueoActualizacionDatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ValidarBloqueoActualizacionDatosResult" nillable="true" type="q38:BloqueoActualizacionDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarAsesoraPorCedula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q39:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarAsesoraPorCedulaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsultarAsesoraPorCedulaResult" nillable="true" type="q40:Usuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarSolicitudActualizacionDatosHistoricoUbicacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q41:SolicitudActualizacionDatosHistoricoUbicacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarSolicitudActualizacionDatosHistoricoUbicacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Base" minOccurs="0" name="InsertarSolicitudActualizacionDatosHistoricoUbicacionResult" nillable="true" type="q42:Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFechasLimiteCampanaAsesora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q43:VigenciasCampana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFechasLimiteCampanaAsesoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsultarFechasLimiteCampanaAsesoraResult" nillable="true" type="q44:VigenciaCampana" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsutarUsuarioMercadeo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Requests.Negocio" minOccurs="0" name="request" nillable="true" type="q45:LoginUsuario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsutarUsuarioMercadeoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWeb.Services.Responses.Negocio" minOccurs="0" name="ConsutarUsuarioMercadeoResult" nillable="true" type="q46:UsuarioConcursoMercadeo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

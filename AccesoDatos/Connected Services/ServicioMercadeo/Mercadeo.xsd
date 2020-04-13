@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Responses.Negocio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Responses.Negocio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8091/Servicios/Mercadeo.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Entidades" />
+  <xs:import schemaLocation="http://mptucasadelujo.marketingpersonal.com:8091/Servicios/Mercadeo.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Responses.Base" />
+  <xs:complexType name="RealityCrucero">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Responses.Base" base="q1:Response">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Entidades" minOccurs="0" name="Response" nillable="true" type="q2:ArrayOfRealityCrucero" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RealityCrucero" nillable="true" type="tns:RealityCrucero" />
+  <xs:complexType name="PuntajeAsesora">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Responses.Base" base="q3:Response">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/MarketingPersonal.PedidosWebAD.Services.Entidades" minOccurs="0" name="ListaPuntajesAsesora" nillable="true" type="q4:ArrayOfPuntajeAsesora" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PuntajeAsesora" nillable="true" type="tns:PuntajeAsesora" />
+</xs:schema>
